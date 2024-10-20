@@ -1,0 +1,126 @@
+.content {
+    position: relative;
+    z-index: 3;
+  }
+  #no{
+    position: absolute;
+    display: inline-block;
+    left: 35%; 
+    top: 50vh;
+    -webkit-transition: all 0.1s ease-out;
+  }
+  #yes{
+    position: absolute;
+    display: inline-block;
+    left: 70%; 
+    top: 50vh;
+    -webkit-transition: all 0.3s ease-out;
+  }
+
+/* Class for handling gif image backgrond */
+#bg{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* opacity: .8; */
+  /* height: 100vh; */
+  z-index: 0;
+  background-repeat: no-repeat;
+  background-image: url(../img/bg.gif);
+  background-size: cover;
+  background-position: 50%;
+  /* -webkit-filter: blur(2px); */
+}
+
+#video {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  background-size: cover;
+  background-position: 50%;
+}
+
+.swal2-title, .swal2-content{
+  color: #191919 !important;
+  font-family: monospace;
+}
+
+.swal2-title {
+  font-size: 24px !important;
+}
+
+.swal2-popup {
+  border-radius: 15px !important;
+}
+
+/* #text3 */
+header h2 {
+  font-family: 'Pacifico';
+  font-size: 50px;
+  text-align: center;
+  color: black;
+  margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+/* #text4 */
+header h4 {
+  font-family: 'Pacifico';
+  line-height: 1.5;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: black;
+  text-align: center;
+}
+
+@media only screen and (max-width: 500px) {
+  header h2 {
+    font-family: 'Pacifico';
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  header h4 {
+    font-family: 'Pacifico';
+    text-align: center;
+    padding: 15px;
+  }
+  #no{
+    position: absolute;
+    display: inline-block;
+    left: 7%; 
+    top: 60vh;
+    font-size: 14px;
+    padding: 3px;
+    -webkit-transition: all 0.1s ease-out;
+  }
+  #yes{
+    position: absolute;
+    display: inline-block;
+    left: 58%; 
+    top: 60vh;
+    font-size: 14px;
+    padding: 3px;
+    -webkit-transition: all 0.3s ease-out;
+  }
+}
+
+.swal-image-yes {
+  background-size: 20% !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom right !important;
+  background-position-y: 5px !important;
+}
+/* 
+.swal-image-result {
+  background-size: 20% !important;
+  background-repeat: no-repeat !important;
+  background-position: bottom right !important;
+  background-position-y: 5px !important;
+} */
